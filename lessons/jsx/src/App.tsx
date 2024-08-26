@@ -1,4 +1,4 @@
-
 export default function App() {
-  return <div>Hello Fam!</div>;
+  const name = <b>Mate</b>;
+  return <div>Hello {name}</div>;
 }
