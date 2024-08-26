@@ -13,7 +13,7 @@ type ExampleProps = {
 
 const Example = ({
   message,
-  required = false,
+  required = true,
 }: ExampleProps) => {
   return (
     <div>
