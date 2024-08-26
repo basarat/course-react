@@ -9,7 +9,9 @@ type ExampleProps = {
 };
 
 const Example = (props: ExampleProps) => {
-  props.message = 'Attempt Mutation 🦁'; // ❌ this will cause a runtime error.
+  // ❌ this will cause a runtime error
+  // 🤕 The component will not render
+  props.message = 'Attempt Mutation 🦁'; 
   return (
     <div>{props.message}</div>
   );
