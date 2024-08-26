@@ -1,8 +1,6 @@
 export default function App() {
   return (
-    <Example>
-      <span>Hi <b>Fam!</b></span>
-    </Example>
+    <Example children={<span>Hi <b>Fam!</b></span>} />
   );
 }
 
