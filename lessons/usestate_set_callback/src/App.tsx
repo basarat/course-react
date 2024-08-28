@@ -6,7 +6,8 @@ export default function App() {
 
   async function inc() {
     await saveInfo();
-    setCount(prev => prev + 1);
+    // setCount(count + 1); // ❌ Bad
+    setCount(prev => prev + 1); // ✅ Good 
   }
 
   return (
