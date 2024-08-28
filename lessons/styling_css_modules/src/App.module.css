@@ -1,0 +1,15 @@
+.red {
+  color: red;
+  transition: all .2s;
+}
+.blue {
+  color: blue;
+  transition: all .2s;
+}
+
+.red:hover {
+  color: purple;
+}
+.blue:hover {
+  color: green;
+}
