@@ -1,5 +1,3 @@
-import styles from './App.module.css';
-
 import { useState, useEffect } from 'react';
 
 /** Mimic a backend API */
@@ -22,7 +20,7 @@ export default function App() {
   }, [value]);
 
   return (
-    <div className={styles.root}>
+    <div>
       <input value={value} onChange={(e) => setValue(e.target.value)} />
       {!!wordCount && <div>Word count: {wordCount}</div>}
     </div>
