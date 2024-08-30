@@ -1,0 +1,41 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px; 
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.input {
+  composes: vertical;
+}
+.input input {
+  width: 100%;
+}
+.input label {
+  cursor: pointer;
+}
+
+.checkbox {
+  composes: horizontal;
+  user-select: none;
+}
+.checkbox input {
+  cursor: pointer;
+}
+.checkbox label {
+  cursor: pointer;
+}
