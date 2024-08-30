@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 /**
+ * Rule 1:
  * Hook calls must be made from the top-level of a function component
  */
 
