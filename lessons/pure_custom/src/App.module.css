@@ -1,0 +1,14 @@
+.value {
+  display: inline-block;
+  width: calc(100% - 90px);
+  margin-right: 10px;
+}
+
+.message {
+  margin: 10px 0px;
+}
+
+.button {
+  display: block;
+  margin-bottom: 5px;
+}
