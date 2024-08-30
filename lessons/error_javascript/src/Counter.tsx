@@ -4,14 +4,13 @@ type CounterProps = {
 };
 
 const badCode = (count: number) => {
-  if (count === 2) {
+  if (count >= 2) {
     throw new Error("You shall not pass!");
   }
 };
 
 export function Counter({ count, inc }: CounterProps) {
   const onClick = () => {
-    inc();
     /**
      * For JavaScript errors not in the flow of React render
      * You should use try / catch
@@ -21,6 +20,7 @@ export function Counter({ count, inc }: CounterProps) {
     } catch (e) {
       console.error(e);
     }
+    inc();
   };
 
   return (
