@@ -6,6 +6,7 @@ type State = {
 
 export class ErrorBoundary extends React.Component<{
   children: React.ReactNode;
+  // focus(1:1)
   fallback: React.ReactNode;
 }> {
   state: State = { hasError: false };
@@ -16,6 +17,7 @@ export class ErrorBoundary extends React.Component<{
   }
 
   render() {
+    // focus(1:3)
     if (this.state.hasError) {
       return this.props.fallback;
     }

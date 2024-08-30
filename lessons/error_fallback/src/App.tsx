@@ -8,6 +8,7 @@ export default function App() {
 
   return (
     <div>
+      // focus(1:1)
       <ErrorBoundary fallback={<div>Counter Crashed 😔</div>}>
         <Counter count={count} inc={inc} />
       </ErrorBoundary>
