@@ -22,7 +22,7 @@ export default function App() {
   const [third, setThird] = useCustom();
 
   return (
-    <div className={styles.root}>
+    <div>
       <input value={first} onChange={(e) => setFirst(e.target.value)} />
       <input value={second} onChange={(e) => setSecond(e.target.value)} />
       <input value={third} onChange={(e) => setThird(e.target.value)} />
