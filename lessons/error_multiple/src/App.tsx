@@ -8,6 +8,7 @@ export default function App() {
   const [countTwo, setCountTwo] = useState(0);
   const incTwo = () => setCountTwo(count => count + 1);
 
+  // focus(3:9)
   return (
     <div>
       <ErrorBoundary fallback={<div>Counter one crashed 😔</div>}>
