@@ -6,6 +6,7 @@ export default function App() {
   const [count, setCount] = useState(0);
   const inc = () => setCount((count) => count + 1);
 
+  // focus(3:5)
   return (
     <div>
       <ErrorBoundary>
