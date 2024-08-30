@@ -11,6 +11,7 @@ export class ErrorBoundary extends React.Component<{ children: React.ReactNode, 
     return { hasError: true };
   }
 
+  // focus(1:4)
   override componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.log(error);
     console.log('errorInfo.componentStack:', errorInfo.componentStack);
