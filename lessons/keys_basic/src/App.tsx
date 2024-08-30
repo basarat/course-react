@@ -10,11 +10,11 @@ export default function App() {
 
   return (
     <div>
-      {messages.map((message, i) => {
+      {messages.map((message, index) => {
         return (
-          <div className={styles.message}>
+          <div key={index} className={styles.message}>
             <input className={styles.value} defaultValue={message.value} />
-            <button className={styles.button} onClick={() => removeMessage(i)}>
+            <button className={styles.button} onClick={() => removeMessage(index)}>
               Remove
             </button>
           </div>
