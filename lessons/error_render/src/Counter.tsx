@@ -11,6 +11,7 @@ const badCode = (count: number) => {
 };
 
 export function Counter({ count, inc }: CounterProps) {
+  // focus(1:1)
   badCode(count);
 
   const onClick = () => {
