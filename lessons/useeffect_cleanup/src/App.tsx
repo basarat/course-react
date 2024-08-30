@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const getWordCount = async (value: string) => {
   const duration = value == 'hello' ? 3000 : 1000;
   await new Promise(res => setTimeout(res, duration));
-  return value.split(' ').length;
+  return value.trim().split(' ').length;
 }
 
 export default function App() {
