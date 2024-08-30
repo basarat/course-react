@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react';
-
-const getWordCount = async (value: string) => {
-  const duration = value == 'hello' ? 3000 : 1000;
-  await new Promise(res => setTimeout(res, duration));
-  return value.trim().split(' ').length;
-}
+import { getWordCount } from './api';
 
 export default function App() {
   const [value, setValue] = useState('');
