@@ -11,6 +11,7 @@ const badCode = (count: number) => {
 
 export function Counter({ count, inc }: CounterProps) {
   const onClick = () => {
+    // !focus(1:9)
     /**
      * For JavaScript errors not in the flow of React render
      * You should use try / catch
