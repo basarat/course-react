@@ -6,7 +6,7 @@ export default function App() {
     <div className={styles.root}>
       <input
         ref={(element: HTMLInputElement) => {
-          console.log(element);
+          console.log("Callback:", element);
         }}
       />
     </div>
