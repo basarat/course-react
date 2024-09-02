@@ -5,7 +5,7 @@ import { Button } from "./Button";
 /**
  * Notice that no ThemeProvider is used
  */
-export function App() {
+export default function App() {
   return (
     <div className={styles.root}>
       <Button onClick={() => alert("alpha")}>Alpha</Button>
