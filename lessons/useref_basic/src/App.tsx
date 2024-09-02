@@ -11,6 +11,7 @@ export default function App() {
   const onSubmit = () => {
     if (!value) {
       setMessage('Please enter a value');
+      // focus (1:1)
       inputRef.current?.focus();
     } else {
       setMessage('Validated');
