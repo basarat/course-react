@@ -1,4 +1,3 @@
-import styles from './App.module.css';
 import { useEffect, useRef, useState } from 'react';
 
 export default function App() {
@@ -12,7 +11,7 @@ export default function App() {
 
   // focus(4:4)
   return (
-    <div className={styles.root}>
+    <div>
       <input value={value} onChange={(e) => setValue(e.target.value)} />
       <div>Rendered: {countRef.current}</div>
     </div>
