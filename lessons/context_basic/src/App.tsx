@@ -5,7 +5,7 @@ import { Button } from "./Button";
 // focus(1:1)
 import { ThemeProvider } from "./ThemeContext";
 
-export default function App() {
+export default function AppWithTheme() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const toggleTheme = () =>
     setTheme((theme) => (theme == "light" ? "dark" : "light"));
@@ -24,7 +24,7 @@ export default function App() {
   );
 }
 
-export function AppWithTheme() {
+export function App() {
   return (
     <div className={styles.root}>
       <Button onClick={() => alert("alpha")}>Alpha</Button>
