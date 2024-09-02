@@ -18,7 +18,6 @@ export default function PrintApp() {
       setIsPrinting(false);
     }
 
-    // focus
     window.addEventListener('beforeprint', handleBeforePrint);
     window.addEventListener('afterprint', handleAfterPrint);
     return () => {
