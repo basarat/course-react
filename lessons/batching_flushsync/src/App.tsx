@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// focus
+// focus(1:1)
 import { flushSync } from 'react-dom';
 
 export default function PrintApp() {

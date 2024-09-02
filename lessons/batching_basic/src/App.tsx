@@ -13,7 +13,7 @@ export default function App() {
     }, 500);
   };
 
-  // focus
+  // focus(1:1)
   console.log("Rendered", count, toggle);
 
   return (
