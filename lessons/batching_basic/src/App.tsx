@@ -6,6 +6,8 @@ export default function App() {
 
   const handleClick = () => {
     setTimeout(() => {
+      // focus(1:3)
+      // Note that these two state changes only result in single re-render
       setCount((count) => count + 1);
       setToggle((toggle) => !toggle);
     }, 500);
