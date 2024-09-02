@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.message {
+  font-size: .5rem;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fancy {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.fancy:focus {
+  color: #0f5fcc;
+}
