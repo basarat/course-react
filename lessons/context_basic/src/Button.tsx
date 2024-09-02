@@ -13,6 +13,7 @@ const darkStyle = {
   color: "#fff",
 };
 
+// focus(1:1)
 import { useTheme } from "./ThemeContext";
 
 export type ButtonProps = {

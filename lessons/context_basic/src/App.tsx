@@ -10,7 +10,7 @@ export default function App() {
   const toggleTheme = () =>
     setTheme((theme) => (theme == "light" ? "dark" : "light"));
 
-  // focus(2:2)
+  // focus(2:10)
   return (
     <ThemeProvider value={theme}>
       <button
