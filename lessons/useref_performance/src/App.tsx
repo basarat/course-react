@@ -8,14 +8,14 @@ export default function App() {
   const intervalRef = useRef<number | null>(null);
 
   const startInterval = () => {
-    // focus (1:3)
+    // focus(1:3)
     intervalRef.current = setInterval(() => {
       setSeconds((seconds) => seconds + 1);
     }, 1000);
   }
 
   const stopInterval = () => {
-    // focus (1:3)
+    // focus(1:3)
     if (intervalRef.current) {
       clearInterval(intervalRef.current!);
     }
