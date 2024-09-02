@@ -17,7 +17,7 @@ export default function App() {
   const stopInterval = () => {
     // focus(1:3)
     if (intervalRef.current) {
-      clearInterval(intervalRef.current!);
+      clearInterval(intervalRef.current);
     }
   }
 
