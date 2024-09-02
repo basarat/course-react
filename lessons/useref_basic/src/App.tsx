@@ -1,9 +1,11 @@
 import styles from './App.module.css';
+// focus(1:1)
 import { useState, useRef } from 'react';
 
 export default function App() {
   const [value, setValue] = useState('');
   const [message, setMessage] = useState('Submit to validate');
+  // focus(1:1)
   const inputRef = useRef<HTMLInputElement>(null);
 
   const onSubmit = () => {
@@ -15,6 +17,7 @@ export default function App() {
     }
   };
 
+  // focus(3:3)
   return (
     <div className={styles.root}>
       <input ref={inputRef} value={value} onChange={(e) => setValue(e.target.value)} />
