@@ -1,8 +1,6 @@
-// focus(1:1)
 import { useId } from "react";
 
 export function PersonForm() {
-  // focus(1:1)
   const id = useId();
   return (
     <div>
