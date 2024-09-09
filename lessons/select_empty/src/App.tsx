@@ -17,7 +17,7 @@ export default function App() {
       </select>
 
       {{
-        '': '🤷',
+        '': '🤷🏻‍♂️',
         'dog': '🐕',
         'cat': '🐈',
         'parrot': '🦜',
