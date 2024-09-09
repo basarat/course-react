@@ -13,12 +13,14 @@ export default function App() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
 
+  // focus(1:2)
   const firstNameRef = useRef<HTMLInputElement>(null);
   const lastNameRef = useRef<HTMLInputElement>(null);
 
   const focusFirstName = () => firstNameRef.current?.focus();
   const focusLastName = () => lastNameRef.current?.focus();
 
+  // focus(4:4,9:9)
   return (
     <>
       <div style={fullScreen}>
