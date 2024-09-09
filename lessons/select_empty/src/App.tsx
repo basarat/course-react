@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function App() {
-  // Start off with an empty value
+  /** Start off with an empty value */
   const [value, setValue] = useState("");
 
   return (

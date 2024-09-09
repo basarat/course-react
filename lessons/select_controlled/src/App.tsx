@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function App() {
-  // Create a state variable to store the selected value
+  /** Create a state variable to store the selected value */
   const [value, setValue] = useState('dog');
 
   return (
