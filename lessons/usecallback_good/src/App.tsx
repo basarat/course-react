@@ -11,6 +11,7 @@ export default function App() {
     [setCount]
   );
 
+  // focus(4:4)
   return (
     <>
       <div>Count: {count}</div>
