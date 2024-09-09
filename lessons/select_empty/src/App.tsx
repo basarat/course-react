@@ -15,15 +15,14 @@ export default function App() {
         <option value="parrot">Parrot</option>
         <option value="chicken">Chicken</option>
       </select>
-      {/* Display an icon based on the selected value */}
-      {
-        {
-          dog: "🐕",
-          cat: "🐈",
-          parrot: "🦜",
-          chicken: "🐓",
-        }[value]
-      }
+
+      {{
+        '': '🤷',
+        'dog': '🐕',
+        'cat': '🐈',
+        'parrot': '🦜',
+        'chicken': '🐓'
+      }[value]}
     </>
   );
 }
