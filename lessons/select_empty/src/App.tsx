@@ -9,7 +9,7 @@ export default function App() {
       <label htmlFor="pet">Choose a pet</label>
       <select id="pet" value={value} onChange={(e) => setValue(e.target.value)}>
         {/* Something to display for an empty value */}
-        <option value="">--Please choose an option--</option>
+        <option value="">None</option>
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
         <option value="parrot">Parrot</option>
@@ -17,7 +17,6 @@ export default function App() {
       </select>
 
       {{
-        '': '🤷🏻‍♂️',
         'dog': '🐕',
         'cat': '🐈',
         'parrot': '🦜',
