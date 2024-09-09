@@ -22,7 +22,8 @@ export default function App() {
         <div>
           <button type="button" onClick={() => setUsername("Alpha")}>Alpha</button>
           <button type="button" onClick={() => setUsername("Beta")}>Beta</button>
-          <button type="button" onClick={() => setUsername("Gamma")}>Gamma</button>
+          {/* Without type="button" it submits the form as a side-effect 😱 */}
+          <button onClick={() => setUsername("Gamma")}>Gamma</button>
         </div>
 
         <button type="submit">Submit</button>
