@@ -28,11 +28,13 @@ export default function App() {
     setItems(searchItems(value));
   };
 
+  // focus(5:6)
   return (
     <>
       <input value={value} onChange={(e) => handleChange(e.target.value)} />
       <button onClick={handleRandom}>Random</button>
-      <List items={items} />
+      {/* When there is a transition pending the `isPending` boolean is true */}
+      <List items={items} style={{ opacity: isPending ? .5 : 1 }} />
     </>
   );
 }
