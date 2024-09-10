@@ -1,11 +1,8 @@
-import React, { useDeferredValue, useState } from 'react';
+import { useDeferredValue, useState } from 'react';
 import { Products } from './Products';
 
-function App() {
+export default function App() {
   const [value, setValue] = useState('');
-  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    setValue(e.target.value);
-  };
 
   const deferredValue = useDeferredValue(value);
   // focus(1:1)
@@ -13,15 +10,13 @@ function App() {
 
   // focus(4:4)
   return (
-    <div>
+    <>
       <input
-        style={{ color: isStale ? 'dimgray' : 'black' }}
+        style={isStale ? { color: 'dimgray', backgroundColor: 'lightgray' } : undefined}
         value={value}
-        onChange={handleChange} />
+        onChange={e => setValue(e.target.value)} />
       
       <Products searchTerm={deferredValue} />
-    </div>
+    </>
   );
 }
-
-export default App;
