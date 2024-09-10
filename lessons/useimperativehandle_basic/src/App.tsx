@@ -6,7 +6,7 @@ export default function App() {
   // focus(1:1)
   const customComponentRef = useRef<Handle>(null);
 
-  // focus(2:2, 4:5)
+  // focus(2:2,4:5)
   return <>
     <CustomComponent ref={customComponentRef} />
 
