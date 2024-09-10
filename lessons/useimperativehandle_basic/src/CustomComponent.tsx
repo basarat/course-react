@@ -1,5 +1,6 @@
 // focus(1:1)
-import { forwardRef, useImperativeHandle } from 'react';
+import { useImperativeHandle } from 'react';
+import { forwardRef } from 'react';
 
 // focus(1:4)
 export type Handle = {
