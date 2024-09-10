@@ -1,0 +1,12 @@
+/* Vertical spaced layout */
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+
+button {
+  margin-right: 10px;
+  align-self: flex-start;
+}
