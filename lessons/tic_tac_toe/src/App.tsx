@@ -1,6 +1,7 @@
 import React from 'react';
-import { useGameState } from './AppState';
+import { BoardStatus, BoardValue, SquareValue, useGameState } from './AppState';
 import { Column, Row } from './Layout';
+import { Log } from './Log';
 
 export default function App() {
   const {
@@ -73,48 +74,6 @@ function Square({ value, onClick }: SquareProps) {
     </div>
   );
 }
-
-export type LogProps = {
-  boardHistory: BoardHistory;
-  onStepClick: (step: number) => void;
-};
-
-export function Log({ boardHistory, onStepClick }: LogProps) {
-  return (
-    <ol>
-      {boardHistory.map((_, index) => {
-        return (
-          <li key={index}>
-            <button onClick={() => onStepClick(index)}>
-              Go to {index === 0 ? 'start' : `move #${index}`}
-            </button>
-          </li>
-        );
-      })}
-    </ol>
-  );
-}
-
-export type Player = 'X' | 'O';
-
-export type SquareValue = Player | null;
-
-export type BoardValue = SquareValue[];
-
-export type BoardStatus =
-  | {
-    type: 'winner',
-    player: Player,
-  }
-  | {
-    type: 'draw',
-  }
-  | {
-    type: 'next',
-    player: Player,
-  };
-
-export type BoardHistory = BoardValue[];
 
 export type StatusProps = {
   boardStatus: BoardStatus,

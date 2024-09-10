@@ -1,5 +1,25 @@
-import { useState } from 'react';
-import type { BoardHistory, BoardStatus, BoardValue, Player } from './App';
+import { useState } from "react";
+
+export type Player = "X" | "O";
+
+export type SquareValue = Player | null;
+
+export type BoardValue = SquareValue[];
+
+export type BoardHistory = BoardValue[];
+
+export type BoardStatus =
+  | {
+      type: "winner";
+      player: Player;
+    }
+  | {
+      type: "draw";
+    }
+  | {
+      type: "next";
+      player: Player;
+    };
 
 const createBoardValue = () => Array(9).fill(null);
 
@@ -12,12 +32,16 @@ function calculateWinner(boardValue: BoardValue) {
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 6]
+    [2, 4, 6],
   ];
 
   for (let i = 0; i < winningCombinations.length; i++) {
     const [a, b, c] = winningCombinations[i];
-    if (boardValue[a] && boardValue[a] === boardValue[b] && boardValue[a] === boardValue[c]) {
+    if (
+      boardValue[a] &&
+      boardValue[a] === boardValue[b] &&
+      boardValue[a] === boardValue[c]
+    ) {
       return boardValue[a];
     }
   }
@@ -30,13 +54,13 @@ function calculateIsFull(boardValue: BoardValue) {
 }
 
 function calculateNext(step: number): Player {
-  return (step % 2 === 0) ? 'X' : 'O';
+  return step % 2 === 0 ? "X" : "O";
 }
 
 export type GameState = {
-  boardHistory: BoardHistory,
-  step: number,
-}
+  boardHistory: BoardHistory;
+  step: number;
+};
 
 export function useGameState() {
   const [gameState, setGameState] = useState<GameState>({
@@ -49,10 +73,11 @@ export function useGameState() {
   const winner = calculateWinner(boardValue);
   const isFull = calculateIsFull(boardValue);
 
-  const boardStatus: BoardStatus =
-    winner ? { type: 'winner', player: winner }
-      : isFull ? { type: 'draw' }
-        : { type: 'next', player: nextPlayer };
+  const boardStatus: BoardStatus = winner
+    ? { type: "winner", player: winner }
+    : isFull
+    ? { type: "draw" }
+    : { type: "next", player: nextPlayer };
 
   function handleSquareClick(square: number) {
     if (winner || isFull || boardValue[square]) return;
