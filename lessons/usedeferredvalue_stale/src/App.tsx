@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <input
-        style={isStale ? { color: 'dimgray', backgroundColor: 'lightgray' } : undefined}
+        style={isStale ? { color: 'dimgray', backgroundColor: '#eee' } : undefined}
         value={value}
         onChange={e => setValue(e.target.value)} />
       
