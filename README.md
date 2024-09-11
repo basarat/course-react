@@ -10,4 +10,4 @@ Code for the [React Course on Boolean Art][course].
 
 # Playing with the code
 
-The best way to play with the code is using "Play" description in the various lessons you can find in the course. This will open the code for you in ready to play browser based development environment.
+The best way to play with the code is by using the "Play ▶️" button you can find in the lesson descriptions for the course. This will open the code for you in a ___ready to play___ browser based development environment.
