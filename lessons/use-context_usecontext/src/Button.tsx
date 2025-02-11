@@ -13,8 +13,9 @@ const darkStyle = {
   color: "#fff",
 };
 
-// focus(1:1)
-import { useTheme } from "./ThemeContext";
+// focus(1:2)
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
 
 export type ButtonProps = {
   onClick: () => void;
@@ -23,7 +24,7 @@ export type ButtonProps = {
 
 export const Button = (props: ButtonProps) => {
   // focus(1:1)
-  const theme = useTheme();
+  const theme = useContext(ThemeContext);
   return (
     <button
       style={theme == "light" ? lightStyle : darkStyle}
