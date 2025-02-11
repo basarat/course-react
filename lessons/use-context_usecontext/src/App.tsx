@@ -2,6 +2,7 @@ import styles from "./App.module.css";
 import { useState } from "react";
 import { Button } from "./Button";
 
+// focus(1:1)
 import { ThemeContext } from "./ThemeContext";
 
 export default function AppWithTheme() {
