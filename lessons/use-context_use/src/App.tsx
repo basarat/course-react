@@ -2,7 +2,7 @@ import styles from "./App.module.css";
 import { useState } from "react";
 import { Button } from "./Button";
 
-import { ThemeProvider } from "./ThemeContext";
+import { ThemeContext } from "./ThemeContext";
 
 export default function AppWithTheme() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -11,7 +11,7 @@ export default function AppWithTheme() {
 
   return (
     // focus(1:1)
-    <ThemeProvider value={theme}>
+    <ThemeContext.Provider value={theme}>
       <button
         className={theme == "light" ? styles.light : styles.dark}
         onClick={toggleTheme}
@@ -19,7 +19,7 @@ export default function AppWithTheme() {
         {theme == "light" ? "🌞" : "🌑"}
       </button>
       <App />
-    </ThemeProvider>
+    </ThemeContext.Provider>
   );
 }
 
