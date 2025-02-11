@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-end;
+  user-select: none;
+}
+.checkbox input {
+  cursor: pointer;
+}
+.checkbox label {
+  cursor: pointer;
+  font-family: Courier;
+}
