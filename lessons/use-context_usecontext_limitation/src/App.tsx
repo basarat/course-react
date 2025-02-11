@@ -24,11 +24,11 @@ export default function AppWithTheme() {
       <div className={styles.checkbox}>
         <input
           type="checkbox"
-          id="accept"
+          id="custom"
           checked={isCustom}
           onChange={toggleIsCustom}
         />
-        <label htmlFor="accept">Use Custom Styles</label>
+        <label htmlFor="custom">Use Custom Styles</label>
       </div>
 
       <div className={styles.root}>
