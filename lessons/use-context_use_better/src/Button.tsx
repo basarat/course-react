@@ -30,7 +30,7 @@ export type ButtonProps = {
 };
 
 export const Button = (props: ButtonProps) => {
-  // focus(1:7)
+  // focus(1:6)
   const { isCustom } = props;
   const style = isCustom
     ? customStyle
