@@ -14,8 +14,8 @@ const darkStyle = {
 };
 
 // focus(1:2)
-import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
+import { useContext } from "react";
 
 export type ButtonProps = {
   onClick: () => void;
