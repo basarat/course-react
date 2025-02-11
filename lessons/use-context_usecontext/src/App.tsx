@@ -10,6 +10,7 @@ export default function AppWithTheme() {
     setTheme((theme) => (theme == "light" ? "dark" : "light"));
 
   return (
+    // focus(1:1)
     <ThemeProvider value={theme}>
       <button
         className={theme == "light" ? styles.light : styles.dark}
